@@ -1,0 +1,5 @@
+= @foods.each do |food|
+  %h2= link_to food.title, food
+  %p= food.company
+
+  = link_to "New Food", new_food_path

@@ -1,0 +1,8 @@
+%h1= @food.title
+%p= @food.description
+%p= @food.company
+%p= @food.rating
+
+= link_to "Home", root_path
+= link_to "Edit", edit_food_path(@food)
+= link_to "Delete", food_path(@food), method: :delete, data: { confirm: "Are you sure?" }

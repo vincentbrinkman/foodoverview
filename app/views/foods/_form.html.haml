@@ -1,0 +1,8 @@
+= simple_form_for(@food, html: { class: 'form-horizontal'}) do |f|
+  = f.input :title, label: "Food name"
+  = f.input :description, label: "Food Description"
+  = f.input :company, label: "Your Company"
+  = f.input :rating, label: "Your Rating"
+  = f.input :url, label: "Link to Food"
+  %br/
+  = f.button :submit
